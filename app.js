@@ -15,7 +15,6 @@
 // Function
 
 // Example-1
-
 // function fullName(firstName, middleName, lastName) {
 //     return firstName + middleName + lastName;
 // };
@@ -25,7 +24,6 @@
 // console.log(result2);
 
 // Example-2
-
 // function doMath(num1, num2, num3) {
 //     const equation = num1 / num2 * num3 + num2 - num1;
 //     return equation;
@@ -38,7 +36,6 @@
 // console.log(result3);
 
 // Example - 3
-
 // function greet(personName) {
 //     const message = `Assalamualaikum my name is ${personName}`;
 //     return message;
@@ -48,7 +45,6 @@
 // console.log(greet("Rahman."));
 
 // Example - 4
-
 // function doMath(a, b, c, d = 5) {
 //     console.log(a, b, c, d);
 //     const sum = a + b + c + d;
@@ -61,7 +57,6 @@
 // Funtion Expression
 
 // Example-1
-
 // const pictureName = function (pictureName) {
 //     const message = `This is the picture of ${pictureName}`;
 //     return message;
@@ -69,9 +64,25 @@
 // console.log(pictureName("Monalisa"));
 
 // Example-2
-
 // const colorName = function (colorName) {
 //     const message = `This is color ${colorName}`;
 //     return message;
 // };
 // console.log(colorName("Yellow"));
+
+// Arrow Function
+
+// Example-1
+// const doMath = (num1, num2) => {
+//     const remainder = num1 % num2;
+//     return remainder;
+// }; console.log(doMath(12, 3));
+
+// for (=>) we can solve the previous function in shorter way
+
+// const doMath = (num1, num2) => num1 % num2;
+// console.log(doMath(18, 5));
+
+// Example-2
+// const fullName = (firstName, lastName) => firstName + lastName;
+// console.log(fullName("Tahia", "Bushra"));
