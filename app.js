@@ -57,23 +57,23 @@
 // Funtion Expression
 
 // Example-1
-// const pictureName = function (pictureName) {
+// const picture = function (pictureName) {
 //     const message = `This is the picture of ${pictureName}`;
 //     return message;
 // };
-// console.log(pictureName("Monalisa"));
+// console.log(picture("Monalisa"));
 
 // Example-2
-// const colorName = function (colorName) {
+// const colorExpresser = function (colorName) {
 //     const message = `This is color ${colorName}`;
 //     return message;
 // };
-// console.log(colorName("Yellow"));
+// console.log(colorExpresser("Yellow"));
 
 // Arrow Function
 
 // Example-1
-// const doMath = (num1, num2) => {
+// const doMath = (num1, num2) =>{
 //     const remainder = num1 % num2;
 //     return remainder;
 // }; console.log(doMath(12, 3));
@@ -86,3 +86,71 @@
 // Example-2
 // const fullName = (firstName, lastName) => firstName + lastName;
 // console.log(fullName("Tahia", "Bushra"));
+
+// Fuction calling another function
+
+// Example-1
+// function cutTrees(tree) {
+//     return tree * 5;
+// };
+// function makeFurniture(tree) {
+//     const pieces = cutTrees(tree);
+//     return pieces;
+// };
+// console.log(makeFurniture(4));
+
+// Example-2
+// function sellProduct(skinCareProduct) {
+//     return skinCareProduct + 5;
+// };
+// function totalProduct(skinCareProduct) {
+//     return sellProduct(skinCareProduct);
+// };
+// console.log(sellProduct(20));
+
+// Array
+
+const myNumbers = [85, 47, 12, 14, 33, 21, 57];
+const randomArray = ["Marium", "America", "3rd", 2, 11];
+
+//  access element
+console.log(myNumbers[5]);
+console.log(randomArray[1]);
+
+// access index or position
+console.log(myNumbers.indexOf(14));
+console.log(myNumbers.indexOf(144));
+console.log(randomArray.indexOf("3rd"));
+console.log(randomArray.indexOf(5));
+
+// lenght o Array
+console.log(myNumbers.length);
+console.log(randomArray.length);
+
+// check the Array
+console.log(myNumbers.includes(12));
+console.log(randomArray.includes("London"));
+
+// add something before
+myNumbers.unshift(100);
+console.log(myNumbers)
+randomArray.unshift(500);
+console.log(randomArray);
+
+// remove something before
+myNumbers.shift(100);
+console.log(myNumbers)
+randomArray.shift(500);
+console.log(randomArray);
+
+// add something after
+myNumbers.push(357);
+console.log(myNumbers)
+randomArray.push("Aloha");
+console.log(randomArray);
+
+// remove something after
+myNumbers.pop(357);
+console.log(myNumbers)
+randomArray.pop("Aloha");
+console.log(randomArray);
